@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Dat2-Uge3-Fullstack:war">
+    <output-path>$PROJECT_DIR$/Dat2-Uge3-Fullstack/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Dat2-Uge3-Fullstack</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Dat2-Uge3-Fullstack-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Dat2-Uge3-Fullstack:war exploded" />
+    </root>
+  </artifact>
+</component>
