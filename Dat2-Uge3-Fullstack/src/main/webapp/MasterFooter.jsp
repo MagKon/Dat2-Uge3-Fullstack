@@ -7,9 +7,24 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<footer>
+<footer class="footer">
   <div class="row">
     <hr>
   </div>
 </footer>
+<%--
+TODO: Adding something like this could be cool: https://getbootstrap.com/docs/5.3/examples/footers/
+--%>
 </html>
+
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+</style>
