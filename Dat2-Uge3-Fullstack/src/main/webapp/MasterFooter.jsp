@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <footer class="footer">
-  <div class="row">
+  <div>
     <hr>
   </div>
 </footer>
@@ -21,10 +21,10 @@ TODO: Adding something like this could be cool: https://getbootstrap.com/docs/5.
   .footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 5%;
     width: 100%;
-    background-color: red;
-    color: white;
+    /*background-color: white;*/
+    /*color: white;*/
     text-align: center;
   }
 </style>

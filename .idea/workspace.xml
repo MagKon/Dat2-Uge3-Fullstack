@@ -10,30 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108e2881-aa34-47e6-a93b-7c9548bbff12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Dat2_Uge3_Fullstack_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Dat2_Uge3_Fullstack_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletLogout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterFooter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Dat2-Uge3-Fullstack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dat2-Uge3-Fullstack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/WelcomePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/WelcomePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterFooter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterFooter.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +170,7 @@
       <workItem from="1678694951907" duration="114000" />
       <workItem from="1678742047201" duration="33000" />
       <workItem from="1678742159426" duration="364000" />
-      <workItem from="1678742534349" duration="1012000" />
+      <workItem from="1678742534349" duration="1366000" />
     </task>
     <servers />
   </component>
