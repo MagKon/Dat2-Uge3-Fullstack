@@ -1,4 +1,4 @@
-package com.example.dat2uge3fullstack;
+package com.example.dat2uge3fullstack.web;
 
 import java.io.*;
 import javax.servlet.http.*;
