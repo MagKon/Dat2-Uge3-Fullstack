@@ -1,6 +1,6 @@
 package com.example.dat2uge3fullstack.web;
 
-import com.example.dat2uge3fullstack.config.ApplicationStart;
+import com.example.dat2uge3fullstack.model.Facade;
 import com.example.dat2uge3fullstack.entities.interfaces.IUser;
 
 import java.io.*;
@@ -16,12 +16,19 @@ public class ServletLogin extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        Map<String, IUser> map = ApplicationStart.getUsersMap();
+        Map<String, IUser> map = Facade.getAllUsers();
         String username = request.getParameter("name");
         String password = request.getParameter("password");
+
+        if (request.getSession().getAttribute("loggedIn") == null) {
+            request.getSession().setAttribute("loggedIn", false);
+            request.getRequestDispatcher("Login.jsp").forward(request, response);
+        }
+
         if (map.containsKey(username)) {
             IUser user = map.get(username);
             if (user.getPassword().equals(password)) {
+                request.getSession().setAttribute("loggedIn", true);
                 request.getSession().setAttribute("user", user);
                 request.getRequestDispatcher("index.jsp").forward(request, response);
             } else {

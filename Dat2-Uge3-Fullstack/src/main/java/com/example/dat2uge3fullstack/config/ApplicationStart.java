@@ -31,9 +31,9 @@ public class ApplicationStart implements ServletContextListener {
 
         try {
             List<IUser> users = new ArrayList<>();
-            IUser user1 = new User("Magnus", "Password");
-            IUser user2 = new User("John", "Password");
-            IUser user3 = new User("Peter", "Password");
+            IUser user1 = new User("magnus", "Password");
+            IUser user2 = new User("john", "Password");
+            IUser user3 = new User("peter", "Password");
             users.add(user1);
             users.add(user2);
             users.add(user3);
