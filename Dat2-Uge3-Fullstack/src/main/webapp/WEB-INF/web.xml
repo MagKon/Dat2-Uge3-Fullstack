@@ -6,4 +6,7 @@
     <welcome-file-list>
         <welcome-file>WelcomePage.jsp</welcome-file>
     </welcome-file-list>
+    <listener>
+        <listener-class>com.example.dat2uge3fullstack.config.ApplicationStart</listener-class>
+    </listener>
 </web-app>
