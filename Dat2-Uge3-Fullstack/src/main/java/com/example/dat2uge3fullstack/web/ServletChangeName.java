@@ -1,5 +1,6 @@
 package com.example.dat2uge3fullstack.web;
 
+import com.example.dat2uge3fullstack.entities.User;
 import com.example.dat2uge3fullstack.entities.interfaces.IUser;
 import com.example.dat2uge3fullstack.model.Facade;
 
@@ -14,8 +15,16 @@ public class ServletChangeName extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String newname = request.getParameter("newname");
 
+        if (request.getSession().getAttribute("loggedIn") == null || !(boolean) request.getSession().getAttribute("loggedIn")) {
+            request.getRequestDispatcher("Login.jsp").forward(request, response);
+        }
+
         if (newname == null || newname.equals(" ")) {
             request.setAttribute("message", "Please enter a valid name");
+        }
+
+        if (Facade.containsUser(newname) != null) {
+            request.setAttribute("message", "User already exists");
         }
 
         if (request.getAttribute("message") == null) {
@@ -25,6 +34,7 @@ public class ServletChangeName extends HttpServlet {
             Facade.updateUser(user);
             request.getRequestDispatcher("UserPage.jsp").forward(request, response);
         } else {
+
             request.getRequestDispatcher("UserPage.jsp").forward(request, response);
         }
     }

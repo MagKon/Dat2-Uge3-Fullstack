@@ -10,15 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108e2881-aa34-47e6-a93b-7c9548bbff12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletChangeName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletCreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletAddValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletDeleteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletDeleteValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/entities/interfaces/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/entities/interfaces/IUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/model/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/model/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/model/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/model/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletChangeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletChangeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/java/com/example/dat2uge3fullstack/web/ServletLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/Login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterHeader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/UserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/UserPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +185,7 @@
       <workItem from="1678742047201" duration="33000" />
       <workItem from="1678742159426" duration="364000" />
       <workItem from="1678742534349" duration="1415000" />
-      <workItem from="1678803869763" duration="4625000" />
+      <workItem from="1678803869763" duration="11269000" />
     </task>
     <servers />
   </component>

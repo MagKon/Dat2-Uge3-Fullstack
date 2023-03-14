@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="WelcomePage.jsp">Home</a>
-                        <a class="nav-link" href="index.jsp">Features</a>
+                        <a class="nav-link" href="UserPage.jsp">Your page</a>
                         <c:choose>
                             <c:when test="${sessionScope.loggedIn == true}">
                                 <a class="nav-link" href="ServletLogout">Logout</a>

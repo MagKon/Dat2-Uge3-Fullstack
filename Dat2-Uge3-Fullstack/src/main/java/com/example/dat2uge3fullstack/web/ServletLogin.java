@@ -19,9 +19,9 @@ public class ServletLogin extends HttpServlet {
         Map<String, IUser> map = Facade.getAllUsers();
         String username = request.getParameter("name");
         String password = request.getParameter("password");
+        String url = request.getHeader("referer");
 
-        if (request.getSession().getAttribute("loggedIn") == null) {
-            request.getSession().setAttribute("loggedIn", false);
+        if (!url.contains("Login.jsp") && !url.contains("ServletLogin")) {
             request.getRequestDispatcher("Login.jsp").forward(request, response);
         }
 
@@ -30,15 +30,20 @@ public class ServletLogin extends HttpServlet {
             if (user.getPassword().equals(password)) {
                 request.getSession().setAttribute("loggedIn", true);
                 request.getSession().setAttribute("user", user);
-                request.getRequestDispatcher("index.jsp").forward(request, response);
+                request.getRequestDispatcher("UserPage.jsp").forward(request, response);
             } else {
                 request.setAttribute("message", "Username or password is incorrect");
                 request.getRequestDispatcher("Login.jsp").forward(request, response);
             }
         } else {
+            request.getSession().setAttribute("loggedIn", false);
             request.setAttribute("message", "Username or password is incorrect");
             request.getRequestDispatcher("Login.jsp").forward(request, response);
         }
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        doGet(request, response);
     }
 
     public void destroy() {

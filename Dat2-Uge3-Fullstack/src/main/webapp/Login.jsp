@@ -24,7 +24,7 @@
         <h2>Log-in</h2>
         <div class="border border-dark rounded">
           <label>${requestScope.message}</label>
-          <form action="ServletLogin" method="get" class="form-group m-2">
+          <form action="ServletLogin" method="post" class="form-group m-2">
             <label for="name">Name</label> <br>
             <input type="text" name="name" id="name" placeholder="John" class="form-control" required> <br>
             <label for="password">Password</label> <br>
