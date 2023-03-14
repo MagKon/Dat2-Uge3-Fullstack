@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108e2881-aa34-47e6-a93b-7c9548bbff12" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterFooter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Dat2-Uge3-Fullstack/src/main/webapp/MasterFooter.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="108e2881-aa34-47e6-a93b-7c9548bbff12" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +168,7 @@
       <workItem from="1678694951907" duration="114000" />
       <workItem from="1678742047201" duration="33000" />
       <workItem from="1678742159426" duration="364000" />
-      <workItem from="1678742534349" duration="1366000" />
+      <workItem from="1678742534349" duration="1415000" />
     </task>
     <servers />
   </component>
