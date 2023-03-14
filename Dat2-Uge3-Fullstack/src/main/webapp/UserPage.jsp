@@ -56,37 +56,36 @@
         <div class="col-sm-9">
             <div class="row">
                 <div class="col-sm-6">
-                    <table class="table table-striped">
+                    <c:set var="listlength" value="${sessionScope.user.getList().size()-1}"/>
+                    <c:set var="skip" value="true"/>
+                    <c:if test="${listlength < 0}">
+                        <c:set var="listlength" value="0"/>
+                        <c:set var="skip" value="false"/>
+                    </c:if>
+                    <table class="table table-striped bordered">
                         <thead class="thead-dark">
                             <tr>
                                 <th>List</th>
                             </tr>
                         </thead>
-                        <c:set var="listlength" value="${sessionScope.user.getList().size()-1}"/>
-                        <c:if test="${listlength < 0}">
-                            <c:set var="listlength" value="0"/>
-                        </c:if>
-                            <tr>
-                                <th>
-                                    <label class="form-control" style="display: inline-flex;min-width: 88%;min-height: 34px;">List is empty</label>
-                                </th>
-                            </tr>
                         <c:forEach var="item" begin="0" end="${listlength}">
-                            <tr>
-                                <th>
-                                    <c:if test="${listlength != 0}">
+                            <c:if test="${skip == true}">
+                                <tr>
+                                    <th>
+
                                         <form action="ServletDeleteValue" method="get">
-                                            <input type="hidden" readonly="readonly" name="delValue" id="delValue" value="${sessionScope.user.getList().get(listlength)}" class="form-control">
-                                            <label class="form-control" style="display: inline-flex;min-width: 88%;min-height: 34px;">${sessionScope.user.getList().indexOf(listlength)}</label>
+                                            <input type="hidden" readonly="readonly" name="delValue" id="delValue" value="${item}" class="form-control">
+                                            <label class="form-control" style="display: inline-flex;min-width: 88%;min-height: 34px;width: auto;">${sessionScope.user.getList().get(item)}</label>
                                             <input type="submit" value="Delete" class="btn btn-primary mb-2" style="float: right;">
                                         </form>
-                                    </c:if>
-                                </th>
-                            </tr>
+
+                                    </th>
+                                </tr>
+                            </c:if>
                         </c:forEach>
                         <th>
                             <form action="ServletAddValue" method="get">
-                                <input type="text" name="value" id="value" placeholder="Value" class="form-control" style="display: inline-flex;min-width: 88%;min-height: 34px;">
+                                <input type="text" name="value" id="value" placeholder="Value" class="form-control" style="display: inline-flex;min-width: 88%;min-height: 34px;width: auto;">
                                 <input type="submit" value="Add" class="btn btn-primary mb-2" style="float: right;">
                             </form>
                         </th>

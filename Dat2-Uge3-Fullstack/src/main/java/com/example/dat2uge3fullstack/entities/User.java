@@ -99,4 +99,9 @@ public class User implements IUser {
     public void removeFromList(String string) {
         this.strings.remove(string);
     }
+
+    @Override
+    public void removeFromList(int index) {
+        this.strings.remove(index);
+    }
 }

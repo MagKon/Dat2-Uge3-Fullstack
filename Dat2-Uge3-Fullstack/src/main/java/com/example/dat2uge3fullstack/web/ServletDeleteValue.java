@@ -19,9 +19,8 @@ public class ServletDeleteValue extends HttpServlet {
 
         IUser user = (IUser) request.getSession().getAttribute("user");
         int index = Integer.parseInt(request.getParameter("delValue"));
-        String value = user.getList().get(index);
 
-        user.removeFromList(value);
+        user.removeFromList(index);
         Facade.updateUser(user);
 
         request.getSession().setAttribute("user", user);

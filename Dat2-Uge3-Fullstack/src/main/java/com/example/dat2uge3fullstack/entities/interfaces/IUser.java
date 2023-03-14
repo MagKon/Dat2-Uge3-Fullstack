@@ -17,4 +17,5 @@ public interface IUser {
     List<String> getList();
     void addToList(String string);
     void removeFromList(String string);
+    void removeFromList(int index);
 }
