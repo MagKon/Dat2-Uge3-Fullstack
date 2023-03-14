@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class User implements IUser {
+    private int id;
     private String name;
     private String password;
     private Permission role;
@@ -38,6 +39,17 @@ public class User implements IUser {
         this.role = role;
         this.strings.addAll(Arrays.asList(strings));
     }
+
+    @Override
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public int getId() {
+        return this.id;
+    }
+
     @Override
     public void setName(String name) {
         this.name = name;

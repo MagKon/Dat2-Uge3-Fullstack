@@ -5,6 +5,8 @@ import com.example.dat2uge3fullstack.enums.Permission;
 import java.util.List;
 
 public interface IUser {
+    void setId(int id);
+    int getId();
     void setName(String name);
     String getName();
     void setPassword(String password);

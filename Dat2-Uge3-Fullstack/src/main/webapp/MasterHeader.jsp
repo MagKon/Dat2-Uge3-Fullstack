@@ -38,7 +38,7 @@
         </nav>
     </header>
 </header>
-
+<br>
 <%-- TODO: Figure out how to incorporate this into the page as it is very nice https://getbootstrap.com/docs/5.3/examples/headers/#
 <header class="p-3 text-bg-dark">
     <div class="container">

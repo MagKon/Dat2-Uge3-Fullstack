@@ -11,25 +11,52 @@
 <head>
   <title>Login</title>
 </head>
-<header>
-  <jsp:include page="MasterHeader.jsp"/>
-</header>
+
+<jsp:include page="MasterHeader.jsp"/>
+
 <body>
 <div class="container-fluid">
 <%--  Create login form with bootstrap--%>
   <div class="row">
-    <label>${requestScope.message}</label>
-    <form action="ServletLogin" method="get">
-      <label for="name">Name</label> <br>
-      <input type="text" name="name" id="name" placeholder="John"> <br>
-      <label for="password">Password</label> <br>
-      <input type="password" name="password" id="password" placeholder="password"> <br> <br>
-      <input type="submit" value="Login">
-    </form>
+    <div class="row text-left form-row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-3" style="font-size: 21px;">
+        <h2>Log-in</h2>
+        <div class="border border-dark rounded">
+          <label>${requestScope.message}</label>
+          <form action="ServletLogin" method="get" class="form-group m-2">
+            <label for="name">Name</label> <br>
+            <input type="text" name="name" id="name" placeholder="John" class="form-control" required> <br>
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="password" placeholder="password" class="form-control" required> <br>
+            <input type="submit" value="Login">
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <br>
+    <div class="row text-left form-row mt-4">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-3" style="font-size: 21px;">
+        <h2>Create new user</h2>
+        <div class="border border-dark rounded">
+          <label>${requestScope.message2}</label>
+          <form action="ServletCreateUser" method="get" class="form-group m-2">
+            <label for="newname">Name</label> <br>
+            <input type="text" name="newname" id="newname" placeholder="John" class="form-control" required> <br>
+            <label for="newpassword">Password</label> <br>
+            <input type="password" name="newpassword" id="newpassword" placeholder="password" class="form-control" required> <br>
+            <input type="submit" value="Create">
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
   </div>
 </div>
 </body>
-<footer>
-  <jsp:include page="MasterFooter.jsp"/>
-</footer>
+
+<jsp:include page="MasterFooter.jsp"/>
+
 </html>
